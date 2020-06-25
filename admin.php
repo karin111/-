@@ -425,6 +425,8 @@ Common Style
 
     .info {
         margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
     }
 
     .info h2 {
@@ -494,13 +496,14 @@ Common Style
         <article>
             <p><?php echo nl2br($value['message']); ?></p>
             <div class="info">
-                <h2>投稿者：<?php echo $value['view_name']; ?></h2>
-                <time>投稿時間：<?php echo date('Y年m月d日 H:i', strtotime($value['post_date'])); ?></time>
-                <?php if(isset($value['edit_date'])){ ?>
-                <time>編集時間：<?php echo date('Y年m月d日 H:i', strtotime($value['edit_date'])); ?></time>
-                <?php } ?>
-
-                <div style="display:inline-flex" style="float:right;">
+                <div class="info_contents">
+                    <h2>投稿者：<?php echo $value['view_name']; ?></h2>
+                    <time>投稿時間：<?php echo date('Y年m月d日 H:i', strtotime($value['post_date'])); ?></time>
+                    <?php if(isset($value['edit_date'])){ ?>
+                    <time>編集時間：<?php echo date('Y年m月d日 H:i', strtotime($value['edit_date'])); ?></time>
+                    <?php } ?>
+                </div>
+                <div style="display:flex" style="float:right;">
                     <a href="edit.php?message_id=<?php echo $value['id']; ?>">
                         <input type="submit" name="btn_submit2" value="編集">
                     </a>
