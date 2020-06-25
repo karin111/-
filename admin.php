@@ -335,32 +335,34 @@ Common Style
         appearance: none;
         -webkit-appearance: none;
         padding: 10px 20px;
-        color: #fff;
+        color: black;
         font-size: 86%;
         line-height: 1.0em;
         cursor: pointer;
         border: none;
         border-radius: 5px;
-        background-color: #c184ff;
+        background-color: lavender;
         display: block;
-        margin: 0 0 0 auto;
-        box-shadow: 0 2px 0px #444;
+        margin: 5px 5px auto 5px;
+        box-shadow: 0 2px 0px lightgray;
+        float: right;
     }
 
     input[name=btn_submit3] {
         appearance: none;
         -webkit-appearance: none;
         padding: 10px 20px;
-        color: #fff;
+        color: black;
         font-size: 86%;
         line-height: 1.0em;
         cursor: pointer;
         border: none;
         border-radius: 5px;
-        background-color: #c184ff;
+        background-color: lavender;
         display: block;
-        margin: 0 0 0 auto;
-        box-shadow: 0 2px 0px #444;
+        margin: 5px 5px auto 5px;
+        box-shadow: 0 2px 0px lightgray;
+        float: right;
     }
 
     hr {
