@@ -15,6 +15,7 @@ $message_array = array();
 $success_message = null;
 $error_message = array();
 $clean = array();
+$clean = array();
 
 session_start();
 
